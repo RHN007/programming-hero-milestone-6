@@ -1,37 +1,23 @@
-// const numbers = [4, 6, 8, 10];
-// const output = [];
+const numbers = [4, 6, 8, 10];
+// const output2 = [];
+
+// const doubleIt = (number) => number * 2;
+// // console.log(doubleIt(5));
+
 // for (const number of numbers) {
-//     const result = number * 2;
-//     output.push(result);
+//     const result = doubleIt(number);
+//     output2.push(result);
 // }
 
-// console.log(output);
+// console.log(output2);
 
-// function min(nums) {
-//     return Math.min(nums);
-// }
-// // console.log(min([1, 3, 2]));
-// const [a, b] = [1, 2, 3, 4, 45, 5];
-// console.log(a + b);
+//1. Loop through each element
+//2. for each element call the provided function
+//3. result for each element will be stored in an array
 
-// const { x, y, z } = { x: 1, y1: 2, z: 3 };
-// // console.log(y);
-
-const nums = [1, 2, 3, 4, 5];
-
-let output = nums.filter((n) => n % 2);
-
+// const output = numbers.map(doubleIt);
+const output = numbers.map((x) => x * 2);
 console.log(output);
 
-const friends = ["Moushumi", "Misha", "Manna", "mimi", "mahiya"];
-
-const all = friends.find((friend) => friend.length == 5);
-
-console.log(all);
-
-const player = {
-    name: { firstName: "Mashrafe", lastName: "Murtaza" },
-    age: 38,
-};
-
-console.log(player.firstName);
+const squares = numbers.map((x) => x * x);
+console.log(squares);
