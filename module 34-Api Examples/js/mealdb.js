@@ -27,3 +27,14 @@ const displaySearchResult = (meals) => {
         searchResult.appendChild(div);
     });
 };
+const loadMealDetail = (mealId) => {
+    const url = `www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => displayMealDetail(data.meals[0]));
+};
+
+const displayMealDetail = (meal) => {
+    // console.log(meal);
+    const mealDetails = document.getElementById("meal-details");
+};
